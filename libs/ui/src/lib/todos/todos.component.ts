@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Todo } from '@org2/data';
 
 @Component({
@@ -6,11 +6,7 @@ import { Todo } from '@org2/data';
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.css']
 })
-export class TodosComponent implements OnInit {
+export class TodosComponent {
   @Input() todos: Todo[];
-
-  constructor() { }
-
-  ngOnInit(): void {}
 
 }
